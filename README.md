@@ -5,7 +5,11 @@ site: https://cdb-calculator.vercel.app/
 
 
 <p align="center">
-  <img alt="New Module Experience" src="https://res.cloudinary.com/dvggwxs6a/image/upload/v1681481672/app-c6_rcojwi.png">
+  <img alt="New Module Experience" src="https://res.cloudinary.com/dvggwxs6a/image/upload/v1681485111/app-c6_piwch0.png">
+</p>
+
+<p align="center">
+  <img alt="New Module Experience" src="https://res.cloudinary.com/dvggwxs6a/image/upload/v1681485179/app-c6-list_qidluu.png">
 </p>
 
 
