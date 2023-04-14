@@ -13,7 +13,7 @@ export async function getCalculatorCdb({ valueInit, term }: GetCalculatorParams)
     }).join('*')})`
 
     const cdbPreFix = await (
-      await fetch('http://api.mathjs.org/v4/', {
+      await fetch('https://api.mathjs.org/v4/', {
         method: 'POST',
         headers: {
           'content-type': 'application/json'
