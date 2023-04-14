@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--color-gray-600);
+  border-radius: 0.5rem;
+}
+
+.card > svg {
+  background: linear-gradient(150.53deg, #ffe45c 0%, #ffc900 100%);
+  border-radius: 5rem;
+  padding: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+

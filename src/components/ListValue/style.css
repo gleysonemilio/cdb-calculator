@@ -1,0 +1,10 @@
+.container-value-month {
+  border: 1px solid #272727;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.container-value-month > p {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,16 @@
+.container {
+  min-width: 30rem;
+  max-width: 40rem;
+  padding: 4rem;
+  border-radius: 1rem;
+  background: var(--color-gray-900);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container p>span {
+  color: var(--color-yellow-500);
+  font-weight: 600;
+  font-size: 1rem;
+}
