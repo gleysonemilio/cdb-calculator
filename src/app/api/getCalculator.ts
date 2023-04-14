@@ -7,11 +7,10 @@ export async function getCalculatorCdb({ valueInit, term }: GetCalculatorParams)
   try {
     const array_term = [...Array(term)]
     const calcPercentageIR = term == 1 ? 17.5 : 15
-    const count = array_term.map(_ => {
-      return `[1 + (13.25% * 105%)]`
-    })
 
-    const valueBody = `${valueInit} * (${count.join('*')})`
+    const valueBody = `${valueInit} * (${array_term.map(_ => {
+      return `[1 + (13.25% * 105%)]`
+    }).join('*')})`
 
     const cdbPreFix = await (
       await fetch('http://api.mathjs.org/v4/', {
