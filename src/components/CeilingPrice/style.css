@@ -1,0 +1,19 @@
+.container-ceilingPrice {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.container-ceilingPrice-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.container-ceilingPrice-input>input {
+
+  border: 1px solid #242424;
+  border-radius: 0.4rem;
+}

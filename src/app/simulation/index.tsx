@@ -4,6 +4,7 @@ import { useCallback, useState } from 'react'
 import { getCalculatorCdb } from '@/app/api/getCalculator'
 import FormResult from './FormResult'
 import SimulationCdbPre from './SimulationCdbPre'
+import CeilingPrice from '@/components/CeilingPrice'
 import './style.css'
 
 export interface DataParams {
@@ -60,18 +61,31 @@ function SimulationCbd() {
 
   return (
     <div className="container">
-      {viewResult ? (
-        <SimulationCdbPre
-          term={term}
-          valueInit={valueInit}
-          msgValitaion={msgValitaion}
-          onGetSimulationCdb={handleGetSimulationCdb}
-          onSetValueInit={(e) => setValueInit(e)}
-          onSetTerm={(e) => setTerm(e)}
-        />
-      ) : (
-        <FormResult data={data} onSetViewResult={() => setViewResult(!viewResult)} />
-      )}
+      <div>
+        <div className="">
+          <button>teste 1</button>
+          <button>teste 2</button>
+
+        </div>
+
+
+        {viewResult ? (
+          <SimulationCdbPre
+            term={term}
+            valueInit={valueInit}
+            msgValitaion={msgValitaion}
+            onGetSimulationCdb={handleGetSimulationCdb}
+            onSetValueInit={(e) => setValueInit(e)}
+            onSetTerm={(e) => setTerm(e)}
+          />
+        ) : (
+          <FormResult data={data} onSetViewResult={() => setViewResult(!viewResult)} />
+        )}
+      </div>
+
+      <div className="">
+        <CeilingPrice />
+      </div>
     </div>
   )
 }
