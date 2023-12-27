@@ -60,7 +60,7 @@ export default function CeilingPrice() {
         <button onClick={() => calculator()}>Calcular</button>
         <button
           onClick={() => {
-            setDy([])
+            setDy([''])
             setResult(0)
             setResulTeto(0)
           }}
