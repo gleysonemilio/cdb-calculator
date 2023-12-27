@@ -35,8 +35,8 @@ export default function CeilingPrice() {
       <div className="">
         <h1>{Title.title_media}</h1>
         <ul>
-          {dy.map((row) => (
-            <li>{format(Number(row))}</li>
+          {dy.map((row, index) => (
+            <li key={index}>{format(Number(row))}</li>
           ))}
         </ul>
       </div>
