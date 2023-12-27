@@ -3,12 +3,13 @@ import './style.css'
 import { Title } from '@/core'
 
 export default function CeilingPrice() {
-  const [dy, setDy] = useState([])
-  const [value, setValue] = useState('')
+  const [dy, setDy] = useState<[string | number]>([''])
+  const [value, setValue] = useState<string | number>('')
   const [result, setResult] = useState(0)
   const [resulTeto, setResulTeto] = useState(0)
 
   const AddDy = () => {
+    console.log(value)
     dy.push(value)
   }
 
@@ -24,7 +25,7 @@ export default function CeilingPrice() {
       (accumulator, currentValue) => Number(accumulator) + Number(currentValue),
       0
     )
-    const value = medio / dy.length
+    const value = (medio as any) / dy.length
 
     setResult(value)
     setResulTeto(value / 0.06)
